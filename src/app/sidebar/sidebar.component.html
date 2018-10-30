@@ -1,0 +1,20 @@
+<nav>
+    <ul>
+        <li>
+            <a
+            routerLink="/users"
+            routerLinkActive="activated">
+                <i class="material-icons">supervised_user_circle</i>
+                {{ currentUrl }}
+            </a>
+        </li>
+        <li >
+            <a
+            routerLink="/posts"
+            routerLinkActive="activated"
+            [class.activated]="currentUrl == '/posts'">
+                <i class="material-icons">message</i>
+            </a>
+        </li>
+    </ul>
+</nav>

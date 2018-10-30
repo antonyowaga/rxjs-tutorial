@@ -1,0 +1,16 @@
+<h1>Posts</h1>
+
+<ul>
+    <li
+    *ngFor="let post of posts$">
+        <h4
+        [ngStyle]="{ 'text-transform': 'capitalize' }">
+            {{ post.title }}
+        </h4>
+        <ul>
+            <li>
+                <p><small>{{ post.body }}</small></p>
+            </li>
+        </ul>
+    </li>
+</ul>
